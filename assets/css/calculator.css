@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tema {
+
+  width: 45%;
+  height: 26px;
+  appearance: none;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.calculatorInfo {
+  font-family: League Spartan;
+font-size: 56px;
+font-weight: 700;
+line-height: 51.52px;
+letter-spacing: -0.9333333373069763px;
+text-align: right;
+
+}
+
+.calculatorTheme {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.dark {
+
+  background: rgba(58, 70, 99, 1);
+
+  && .calculatorBtns {
+    background: rgba(36, 45, 68, 1);
+  }
+ && .calculatorText, h4 {
+  color: rgba(255, 255, 255, 1);
+
+ }
+
+  && .btnNum {
+    color: rgba(67, 74, 89, 1);
+
+  }
+
+  && .btnDel , .btnReset{
+    background: rgba(100, 113, 152, 1);
+    box-shadow: 0px -4px 0px 0px rgba(65, 78, 115, 1) inset;
+
+  }
+  && .btnEqual {
+    background: rgba(208, 63, 47, 1);
+    box-shadow: 0px -4px 0px 0px rgba(147, 38, 26, 1) inset;
+    color:rgba(255, 255, 255, 1);
+  }
+
+  && .calculatorInfo {
+
+    background: rgba(24, 31, 51, 1);
+    border-style: none;
+  }
+}
+
+
+
+
+
+
+body.light {
+
+  background: rgba(230, 230, 230, 1);
+
+  && .calculatorText {
+
+  }
+
+  && .calculatorInfo {
+
+    background: rgba(238, 238, 238, 1);
+
+  }
+
+  && .calculatorBtns {
+
+    background: rgba(210, 205, 205, 1);
+
+
+  }
+}
+
+body.default {
+
+  background: rgba(23, 6, 42, 1);
+
+  && .calculatorText, h4 , .btnNum {
+
+    color: rgba(255, 229, 61, 1);
+
+  }
+
+  && .calculatorInfo {
+    background: rgba(30, 9, 54, 1);
+
+  }
+
+  && .btnNum {
+    background: rgba(51, 28, 77, 1);
+    box-shadow: 0px -4px 0px 0px rgba(136, 28, 158, 1) inset;
+
+  }
+
+  &&  .btnDel , .btnReset{
+    background: rgba(86, 7, 124, 1);
+    box-shadow: 0px -4px 0px 0px rgba(190, 21, 244, 1) inset;
+
+  }
+
+  && .btnEqual {
+
+    background: rgba(0, 222, 208, 1);
+    box-shadow: 0px -4px 0px 0px rgba(108, 249, 241, 1) inset;
+    color:
+  }
+
+}
+
+
+
+.calculatorHead {
+  
+  padding: 20px;
+
+}
+
+.calculatorText {
+
+  padding: 30px 24px 32px 31px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.calculatorText h4 {
+
+  color: rgba(54, 54, 44, 1);
+  font-family: League Spartan;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 29.44px;
+  letter-spacing: -0.5333333611488342px;
+  text-align: center;
+}
+
+.calculatorInfo {
+
+  border: 1px solid rgba(238, 238, 238, 1);
+  padding: 29px 24px 22px 170px;
+  border-radius: 10px;
+  background-color: rgba(238, 238, 238, 1);
+  margin-bottom: 24px;
+  border-style: none;
+}
+
+
+
+
+.calculatorBtns {
+
+  /* background-color: rgba(210, 205, 205, 1); */
+  border-radius: 5px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 13px;
+}
+
+
+.btnNum {
+
+    padding: 13px 10px 11px 10px;
+    background: rgba(229, 228, 225, 1);
+    box-shadow: 0px -4px 0px 0px rgba(167, 158, 145, 1) inset;
+    border-style: none;
+    border-radius: 5px;
+    font-family: League Spartan;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 29.44px;
+    letter-spacing: -0.5333333611488342px;
+    text-align: center;
+    color: rgba(54, 54, 44, 1);
+}
+
+.btnDel , .btnReset{
+
+  border-radius: 5px;
+    background: rgba(55, 129, 135, 1);
+    border-style: none;
+    box-shadow: 0px -4px 0px 0px rgba(27, 96, 102, 1) inset;
+    color: rgba(255, 255, 255, 1);
+    font-family: League Spartan;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18.4px;
+    letter-spacing: -0.3333333432674408px;
+    text-align: center;
+    padding: 12px 10px;
+}
+
+.btnReset {
+
+  grid-column: span 2;
+}
+
+.btnEqual {
+
+  grid-column: span 2;
+  background: rgba(200, 84, 2, 1);
+  box-shadow: 0px -4px 0px 0px rgba(135, 57, 1, 1) inset;
+  border-style: none;
+  font-family: League Spartan;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18.4px;
+  letter-spacing: -0.3333333432674408px;
+  text-align: center;
+   border-radius: 5px;  
+}
+
+
+@media screen and (min-width:1280px){
+  .calculatorHead {
+
+    display: grid;
+    place-content: center;
+  }
+  
+ .dark {
+
+  && 
+    .btnReset:hover:active , .btnDel:hover:active {
+      background-color: rgba(162, 178, 225, 1);
+      box-shadow: 0px -4px 0px 0px rgba(65, 78, 115, 1) inset;
+  
+    }
+
+    && .btnEqual:hover:active {
+
+      background: rgba(249, 107, 91, 1);
+      box-shadow: 0px -4px 0px 0px rgba(147, 38, 26, 1) inset;
+
+
+    }
+
+    && .btnNum:hover:active {
+      background: rgba(255, 255, 254, 1);
+      box-shadow: 0px -4px 0px 0px rgba(179, 164, 151, 1) inset;
+
+
+    }
+ 
+ }
+
+
+
+ .light {
+
+  && .btnReset:hover:active , .btnDel:hover:active {
+
+    background-color: rgba(98, 181, 188, 1);
+    box-shadow: 0px -4px 0px 0px rgba(27, 96, 102, 1) inset;
+
+
+  }
+
+  && .btnEqual:hover:active {
+
+    background: rgba(255, 138, 56, 1);
+    box-shadow: 0px -4px 0px 0px rgba(135, 57, 1, 1) inset;
+
+
+  }
+
+  && .btnNum:hover:active {
+    background: rgba(255, 255, 254, 1);
+    box-shadow: 0px -4px 0px 0px rgba(179, 164, 151, 1) inset;
+
+
+  }
+ }
+
+ .default {
+
+ 
+  && .btnReset:hover:active , .btnDel:hover:active {
+
+    background-color: rgba(134, 49, 175, 1);
+    box-shadow: 0px -4px 0px 0px rgba(190, 21, 244, 1) inset;
+
+
+
+  }
+
+  && .btnEqual:hover:active {
+
+    background:rgba(147, 255, 248, 1);
+    box-shadow: 0px -4px 0px 0px rgba(108, 249, 241, 1) inset;
+
+
+
+  }
+
+  && .btnNum:hover:active {
+    background: rgba(108, 52, 172, 1);
+    box-shadow: 0px -4px 0px 0px rgba(136, 28, 158, 1) inset;
+
+
+
+  }
+ }
+}
